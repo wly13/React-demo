@@ -42,3 +42,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## context
+context提供了在组件中共享此类值的方法，避免使用props去一层一层地传值此类值，因为有时候有些页面用不到此类值  
+context的设计目的就是共享那些对于组件来说全局的数据。但是不要仅仅为了避免在几个层级下的组件传递props而使用context
