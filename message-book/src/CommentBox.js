@@ -12,14 +12,10 @@ class CommentBox extends Component {
   }
 
   handleSubmit(event) {
-    if (this.inputText.value===""){
-      alert("你还没有输入评论，请先输入评论");
-    }else{
       this.props.commentAdd(this.inputText.value);
       this.setState({
         inputValue: ""
       })
-    }
     event.preventDefault();
   }
   inputChange(e) {
@@ -42,7 +38,7 @@ class CommentBox extends Component {
                    className="inputStyle"
             />
             <br/>
-            <button type="submit" className="Btn-submit">留言</button>
+            <button type="submit" className="Btn-submit" disabled={!this.state.inputValue}>留言</button>
             <span className="comments-length">已经有{componentsLength}条评论</span>
           </form>
 
