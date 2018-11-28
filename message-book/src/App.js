@@ -5,7 +5,7 @@ import CommentsList from "./CommentsList";
 import ThemeContext from "./theme-context"
 import ThemeBar from "./ThemeBar"
 import "./App.css"
-
+import Stars from "./Stars"
 const theme = {
   light: {
     bgColor: "#eeeeee",
@@ -56,8 +56,8 @@ class App extends Component {
         <ThemeContext.Provider value={theme[this.state.theme]}>
           <Fragment>
             <div>
-              <button type="button" onClick={() =>{this.changTheme("light")}}>深色主题</button>
-              <button type="button" onClick={() =>{this.changTheme("dark")}}>浅色主题</button>
+              <button type="button" onClick={() =>{this.changTheme("light")}}>浅色主题</button>
+              <button type="button" onClick={() =>{this.changTheme("dark")}}>深色主题</button>
             </div>
             <CommentsList List={comments}/>
             <CommentBox
@@ -66,6 +66,7 @@ class App extends Component {
             />
           </Fragment>
           <ThemeBar/>
+          <Stars/>
         </ThemeContext.Provider>
     );
   }
