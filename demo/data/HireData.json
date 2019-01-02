@@ -1,0 +1,28 @@
+{
+  "HireData": [
+    {
+      "position":"web前端工程师",
+      "experience":"1-3年",
+      "technology":"精通前端相关知识，掌握一种流行框架，了解W3C的标准规范",
+      "wage":"6k-8k"
+    },
+    {
+      "position":"java开发工程师",
+      "experience":"1-3年",
+      "technology":"熟悉java，熟练运用Java相关框架，熟悉代码管理工具",
+      "wage":"6k-8k"
+    },
+    {
+      "position":"C语言开发",
+      "experience":"1-3年",
+      "technology":"精通C语言，有过相关开发经验，熟悉代码管理",
+      "wage":"6k-8k"
+    },
+    {
+      "position":"网页设计",
+      "experience":"1-3年",
+      "technology":"熟练使用相关设计软件，比如Photoshop，Dreamweaver",
+      "wage":"6k-8k"
+    }
+  ]
+}

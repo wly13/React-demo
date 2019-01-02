@@ -1,0 +1,32 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-loader": "^7.1.5",
+    "css-loader": "^1.0.0",
+    "react-bootstrap": "^0.32.4",
+    "react-native": "^0.57.1",
+    "react-router": "^3.x",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}

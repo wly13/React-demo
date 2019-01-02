@@ -1,0 +1,24 @@
+{
+  "CarouselData":[
+    {
+      "images": "./images/slide_1.jpg",
+      "title": "First slide label",
+      "desc": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+    },
+    {
+      "images": "./images/slide_2.jpg",
+      "title": "Second slide label",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "images": "./images/slide_3.jpg",
+      "title": "Third slide label",
+      "desc": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    },
+    {
+      "images": "./images/slide_4.jpg",
+      "title": "Third slide label",
+      "desc": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    }
+  ]
+}
