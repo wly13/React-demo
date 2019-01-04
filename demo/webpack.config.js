@@ -1,13 +1,17 @@
 const path=require('path');
 module.exports = {
-    entry: path.join(__dirname,'./src/index.js'), // 入口文件路径
+    mode:'development',
+    entry: {
+        app:'./src/index.js',
+        action:'./js/index.js'
+    }, // 入口文件路径
     output: {
         path:path.join(__dirname ,"/"),
-        filename: 'app.js'
+        filename: '[name].js'
     },
     devServer: {
         inline: true,
-        port: 9999
+        port: 7777
     },
     module: {
         rules: [
@@ -16,7 +20,7 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 query: {
-                    presets: ['react', 'latest']
+                    presets: ['react', 'latest']//react
                 }
             },
             {
