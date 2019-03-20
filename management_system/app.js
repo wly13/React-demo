@@ -12,7 +12,13 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+//app.set('view engine', 'ejs');//引擎模板为ejs
+//app.set('view engine', 'jade');//引擎模板为jade
+
+//设置引擎模板为html
+app.engine('html',ejs.__express);
+app.set('view engine','html');
+
 
 app.use(logger('dev'));
 app.use(express.json());
