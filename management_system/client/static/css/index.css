@@ -1,0 +1,16 @@
+/* exports = module.exports = require("../node_modules/css-loader/lib/css-base.js")(undefined);
+// imports
+
+
+// module
+exports.push([module.id, "body {\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif;\n}\n", ""]);
+
+// exports
+
+
+
+//////////////////
+// WEBPACK FOOTER
+// ./node_modules/css-loader?{"importLoaders":1}!./node_modules/postcss-loader/lib?{"ident":"postcss"}!./src/index.css
+// module id = ./node_modules/css-loader/index.js?{"importLoaders":1}!./node_modules/postcss-loader/lib/index.js?{"ident":"postcss"}!./src/index.css
+// module chunks = 0 */

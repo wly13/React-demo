@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 module.exports = {
     //配置模式
-    mode:'development',
+    mode: 'development',
 
     // 页面入口文件配置
     entry: {
@@ -12,24 +12,27 @@ module.exports = {
         path: __dirname + '/static/dist/', //默认输出路径前有webpack.config.js的目录路径
         filename: '[name].bundle.js'
     },
-    // entry:'./js/view/main/index.js',
-    // output:{
-    //     path: __dirname + '/output/js/',
-    //     filename :'index.bundle.js'
-    // },
     module: {
         rules: [{
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['es2015', 'react']
-                }
+                use: [{
+                    loader: "babel-loader",
+                    options: {
+                        presets: ["es2015", "env", "react", "stage-0"],
+                        plugins: [
+                            ["import", {
+                                "libraryName": "antd",
+                                "style": "css"
+                            }]
+                        ]
+                    }
+                }],
             },
 
             {
                 test: /\.css$/,
-                loader: "style!css"
+                loader: "style-loader!css-loader",
             },
             {
                 test: /\.less/,
