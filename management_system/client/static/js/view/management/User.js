@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class Devlist extends Component {
+export default class User extends Component {
   render() {
     return (
       <div>
-        <p>sdasdasd</p>
+        <p>user</p>
       </div>
     )
   }

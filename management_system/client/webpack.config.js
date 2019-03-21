@@ -13,14 +13,14 @@ module.exports = {
         filename: '[name].bundle.js'
     },
     module: {
-        rules: [{
+        rules: [{//转码解析js
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: [{
                     loader: "babel-loader",
                     options: {
-                        presets: ["es2015", "env", "react", "stage-0"],
-                        plugins: [
+                        presets: ["es2015", "env", "react", "stage-0"],//设置react和es6的转码及识别
+                        plugins: [//调用antd的样式
                             ["import", {
                                 "libraryName": "antd",
                                 "style": "css"
@@ -30,15 +30,15 @@ module.exports = {
                 }],
             },
 
-            {
+            {//加载css
                 test: /\.css$/,
                 loader: "style-loader!css-loader",
             },
-            {
+            {//加载less
                 test: /\.less/,
                 loader: 'style-loader!css-loader!less-loader'
             },
-            {
+            {//加载图片
                 test: /\.(png|jpg|gif)$/,
                 use: [{
                     loader: 'file-loader',

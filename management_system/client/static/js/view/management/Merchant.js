@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class Devlist extends Component {
+export default class Merchant extends Component {
   render() {
     return (
       <div>
-        <p>sdasdasd</p>
+        <p>Merchant</p>
       </div>
     )
   }
