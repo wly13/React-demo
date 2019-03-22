@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class Menu extends Component {
+export default class Carte extends Component {
   render() {
     return (
       <div>

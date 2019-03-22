@@ -3,10 +3,28 @@ import React, { Component } from 'react';
 import '../../../css/Home.css';
 // import reqwest from 'reqwest';
 import moment from 'moment';
+// devices
 import Devlist from '../devices/Devlist';
-import Prolist from '../Production/Prolist';
 import Devadd from '../devices/Devadd';
-import Proadd from '../Production/Proadd'
+import Devlog from '../devices/Devlog';
+// production
+import Cateadd from '../production/Cateadd';
+import Catelist from '../production/Catelist';
+import Prolist from '../production/Prolist';
+import Proadd from '../production/Proadd';
+// data
+import Devices from '../data/Devices';
+import Sale from '../data/Sale';
+import Userlog from '../data/Userlog';
+// management
+import Carte from '../management/Carte';
+import Metchant from '../management/Merchant';
+import Role from '../management/Role';
+import User from '../management/User';
+// order
+import Orderlist from '../order/Orderlist';
+import Orderadd from '../order/Orderadd';
+
 import 'moment/locale/zh-cn';
 
 import { Layout, Menu, Breadcrumb, Icon, Tabs, Button, Collapse, Input, Form } from 'antd';
