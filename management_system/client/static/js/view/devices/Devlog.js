@@ -4,7 +4,7 @@ export default class Devlog extends Component {
   render() {
     return (
       <div>
-        <p>deblog</p>
+        <p>devlog</p>
       </div>
     )
   }
