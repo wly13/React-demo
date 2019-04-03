@@ -1,4 +1,6 @@
 var webpack = require('webpack');
+
+var uglify  = require('uglifyjs-webpack-plugin');
 module.exports = {
     //配置模式
     mode: 'development',
@@ -51,5 +53,9 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx', '.css', '.json'],
     },
+
+    plugins:[
+        new uglify()
+    ]
 
 }
